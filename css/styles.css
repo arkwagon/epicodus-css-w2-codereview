@@ -25,7 +25,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   color: #fff;
-  background-color: #333333;
+  background-color: #292929;
 }
 
 p {
@@ -50,11 +50,16 @@ p {
   margin: 0;
   padding: 15px 5px 10px 15px;
   background-color: #fff;
-  color: #000;
+  color: #292929;
 }
 
-.nav h3 a:link, .nav h3 a:visited, .nav h3 a:hover, .nav h3 a:active {
-  color: #000;
+.nav h3 a:link, .nav h3 a:visited, .nav h3 a:active {
+  color: #292929;
+  text-decoration: none;
+}
+
+.nav h3 a:hover {
+  color: #77e1ff;
   text-decoration: none;
 }
 
@@ -66,16 +71,16 @@ p {
   padding: 0 15px 0 15px;
   font-weight: 200;
   font-size: 15px;
-  color: #000;
+  color: #292929;
 }
 
 .nav span a:link, .nav span a:visited, .nav span a:active {
-  color: #000;
+  color: #292929;
   text-decoration: none;
 }
 
 .nav span a:hover {
-  color: #0072ff;
+  color: #fc9999;
 }
 
 .imgCaption {
@@ -111,7 +116,7 @@ p {
 }
 
 .primaryCaption h5 {
-  color: #000;
+  color: #292929;
   margin: 0;
   padding: 20px;
   font-weight: 200;
@@ -127,7 +132,7 @@ p {
 
 
 .col2Box h3 {
-  color: #000;
+  color: #292929;
   margin: 0;
   padding: 20px 20px 1px 20px;
   font-weight: 200;
@@ -135,7 +140,7 @@ p {
 }
 
 .col2Box h2 {
-  color: #000;
+  color: #292929;
   margin: 0;
   padding: 3px 20px 20px 20px;
   font-weight: 200;
@@ -154,7 +159,7 @@ img.logo {
 }
 
 .col3Box p {
-  color: #000;
+  color: #292929;
   margin: 0;
   padding: 20px;
   font-weight: 200;
@@ -184,8 +189,13 @@ img.logo {
     padding: 15px 5px 0px 15px;
   }
 
-  .nav h3 a:link, .nav h3 a:visited, .nav h3 a:hover, .nav h3 a:active {
+  .nav h3 a:link, .nav h3 a:visited, .nav h3 a:active {
     color: #fff;
+    text-decoration: none;
+  }
+
+  .nav h3 a:hover {
+    color: #77e1ff;
     text-decoration: none;
   }
 
@@ -202,39 +212,30 @@ img.logo {
   }
 
   .nav span a:hover {
-    color: #ffc62b;
+    color: #fc9999;
   }
 
   .primaryCaption {
     display: none;
   }
 
-  /*.col1, .col2, .col3 {
-    margin: 0;
-  }*/
-
-  /*.col1 {
-    height: 100%;
-  }*/
-
   .col1 img {
     object-fit: cover;
     height: 60vh;
-    /*margin-bottom: 20px;*/
   }
 
   .col2Box {
-    background-color: #FF0909;
+    background-color: #fc9999;
     margin: 0;
     width: 51.5%;
     height: 42vh;
     float: left;
-    border-top: 20px solid #333333;
-    border-right: 20px solid #333333;
+    border-top: 20px solid #292929;
+    border-right: 20px solid #292929;
   }
 
   .col2Box h3 {
-    color: #000;
+    color: #292929;
     text-align: center;
     margin: 68px 10px 0 0;
     padding: 20px 20px 0 30px;
@@ -244,7 +245,7 @@ img.logo {
   }
 
   .col2Box h2 {
-    color: #000;
+    color: #292929;
     text-align: center;
     margin: 0 10px 0 0;
     padding: 3px 20px 20px 20px;
@@ -253,13 +254,13 @@ img.logo {
   }
 
   .col3Box {
-    background-color: #44d6ff;
+    background-color: #77e1ff;
     margin: 0;
     padding: 0 8px 0 8px;
     width: 48.5%;
     height: 42vh;
     float: right;
-    border-top: 20px solid #333333;
+    border-top: 20px solid #292929;
   }
 
   img.logo {
@@ -271,7 +272,7 @@ img.logo {
   }
 
   .col3Box p {
-    color: #000;
+    color: #292929;
     margin: 0;
     padding: 20px 20px 0 30px;
     font-weight: normal;
@@ -279,3 +280,73 @@ img.logo {
     line-height: 20px;
   }
 }
+
+@media screen and (min-width: 960px) {
+  .col1 {
+    display: inline-block;
+    width: 70%;
+    margin:0;
+    padding:0;
+    float:left;
+  }
+
+  .col1 img {
+    object-fit: cover;
+    height: 100vh;
+    margin:0;
+    padding:0;
+  }
+
+  .col2Box {
+    width: 30%;
+    height: 48.5vh;
+    float: right;
+    border-right: none;
+    border-top: none;
+    border-bottom: 20px solid #292929;
+    border-left: 20px solid #292929;
+  }
+
+  .col2Box h3 {
+    margin: 85px 10px 0 0;
+  }
+
+  .col2Box h2 {
+    padding: 10px 20px 20px 20px;
+    font-weight: 200;
+    font-size: 30px;
+  }
+
+  .col3Box {
+    padding: 0 8px 0 8px;
+    width: 30%;
+    height: 51.5vh;
+    float: right;
+    border-top: none;
+    border-left: 20px solid #292929;
+  }
+
+  img.logo {
+    display: block;
+    width: 100px;
+    margin: 0;
+    padding-left: 45px;
+    padding-top: 65px;
+  }
+  /*img.logo {
+    display: block;;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    padding-left: 10px;
+  }*/
+
+  .col3Box p {
+    color: #292929;
+    margin: 0;
+    padding: 30px 25px 0 45px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+  }
