@@ -1,4 +1,5 @@
 /*TESTING ONLY+++++++++++++++++*/
+
 /**:not(body):not(html) {
  box-sizing:border-box;
  border:1px dashed red;
@@ -7,6 +8,7 @@
 .columns {
  min-height: 100px;
 }*/
+
 /* END TESTING+++++++++++++++++*/
 
 *,
@@ -39,28 +41,57 @@ p {
 }
 
 .nav {
-  margin-top: 5%;
-  /*padding-bottom: 2%;*/
-  background-color: #f7f7f7;
+  margin-top: 20px;
+  background-color: #f3f3f3;
 }
 
 .nav h3 {
   font-weight: 400;
   margin: 0;
-  padding: 4% 1% 3% 5%;
+  padding: 15px 5px 10px 15px;
   background-color: #fff;
   color: #000;
 }
 
+.nav h3 a:link, .nav h3 a:visited, .nav h3 a:hover, .nav h3 a:active {
+  color: #000;
+  text-decoration: none;
+}
+
 .links {
-  padding: 2% 0 2% 0;
+  padding: 5px 0 7px 0;
 }
 
 .nav span {
-  padding: 0 5% 0 4%;
+  padding: 0 15px 0 15px;
   font-weight: 200;
-  font-size: .9em;
+  font-size: 15px;
   color: #000;
+}
+
+.nav span a:link, .nav span a:visited, .nav span a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav span a:hover {
+  color: #0072ff;
+}
+
+.imgCaption {
+  padding: 20px 0 20px 0;
+}
+
+.imgCaption h3 {
+  font-weight: 400;
+  font-size: 17px;
+  margin: 0;
+}
+
+.imgCaption h5 {
+  font-weight: 700;
+  margin: 0;
+  padding-top: 5px;
 }
 
 .col1 {
@@ -72,54 +103,136 @@ p {
   width: 100%;
   display:block;
   margin: 0 auto;
-  background: #c9c;
-}
-
-.imgCaption {
-  padding: 4% 0 4% 0;
-}
-
-.imgCaption h3 {
-  font-weight: 400;
-  margin: 0;
-}
-
-.imgCaption h5 {
-  font-weight: 700;
-  margin: 0;
-  padding-top: 1.5%;
 }
 
 .primaryCaption {
   background-color: #fff;
-  /*margin: 0;*/
-}
-
-.primaryCaption i {
-  padding-right: 3%;
+  margin: 0 auto;
 }
 
 .primaryCaption h5 {
   color: #000;
   margin: 0;
-  padding: 5% 5% 5% 4%;
+  padding: 20px;
   font-weight: 200;
-  font-size: .7em;
+  font-size: 12px;
 }
 
-.col2 {
+.col2Box {
   background-color: #fff;
-  /*margin: 0;*/
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.col2 span {
-  display: inline-block;;
-}
 
-.col2 h3, .col2 h2, .col2 i {
-  margin: 0;
+.col2Box h3 {
   color: #000;
-  padding: 0;
+  margin: 0;
+  padding: 20px 20px 1px 20px;
   font-weight: 200;
-  font-size: .7em;
+  font-size: 12px;
+}
+
+.col2Box h2 {
+  color: #000;
+  margin: 0;
+  padding: 3px 20px 20px 20px;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.col3Box {
+  background-color: #fff;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col3Box p {
+  color: #000;
+  margin: 0;
+  padding: 20px;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+/*MEDIA QUERIES+++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 155px;
+    background: none;
+  }
+
+  .nav h3 {
+    background: none;
+    color: #fff;
+    padding: 15px 5px 0px 15px;
+  }
+
+  .nav h3 a:link, .nav h3 a:visited, .nav h3 a:hover, .nav h3 a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav span {
+    display: block;
+    padding-bottom: 2.5px;
+    padding-top: 2.5px;
+    color: #fff;
+  }
+
+  .nav span a:link, .nav span a:visited, .nav span a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav span a:hover {
+    color: #ffc62b;
+  }
+
+  .primaryCaption {
+    display: none;
+  }
+
+  /*.col1, .col2, .col3 {
+    margin: 0;
+  }*/
+
+  /*.col1 {
+    height: 100%;
+  }*/
+
+  .col1 img {
+    object-fit: cover;
+    height: 60vh;
+    /*margin-bottom: 20px;*/
+  }
+
+  .col2Box {
+    margin: 0;
+    width: 51%;
+    height: 42vh;
+    float: left;
+    border-top: 20px solid black;
+    border-right: 20px solid black;
+  }
+
+  .col3Box {
+    margin: 0;
+    width: 49%;
+    height: 42vh;
+    float: right;
+    border-top: 20px solid black;
+  }
 }
