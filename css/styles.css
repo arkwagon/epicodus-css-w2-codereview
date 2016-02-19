@@ -270,8 +270,12 @@ img.logo {
     border-right: 20px solid #3d3d3d;
   }
 
+  .col2Box:hover {
+    background-color: #ffc365;
+    cursor: pointer;
+  }
+
   .col2Box h3 {
-    color: #3d3d3d;
     text-align: center;
     margin: 68px 10px 0 0;
     padding: 20px 20px 0 30px;
@@ -281,7 +285,6 @@ img.logo {
   }
 
   .col2Box h2 {
-    color: #3d3d3d;
     text-align: center;
     margin: 0 10px 0 0;
     padding: 3px 20px 20px 20px;
@@ -297,6 +300,11 @@ img.logo {
     height: 42vh;
     float: right;
     border-top: 20px solid #3d3d3d;
+  }
+
+  .col3Box:hover {
+    background-color: #86ff76;
+    cursor: pointer;
   }
 
   img.logo {
