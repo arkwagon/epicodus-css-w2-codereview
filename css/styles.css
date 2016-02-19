@@ -25,7 +25,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   color: #fff;
-  background: #000;
+  background-color: #333333;
 }
 
 p {
@@ -149,6 +149,10 @@ p {
   margin-right: auto;
 }
 
+img.logo {
+  display: none;
+}
+
 .col3Box p {
   color: #000;
   margin: 0;
@@ -220,19 +224,58 @@ p {
   }
 
   .col2Box {
+    background-color: #FF0909;
     margin: 0;
-    width: 51%;
+    width: 51.5%;
     height: 42vh;
     float: left;
-    border-top: 20px solid black;
-    border-right: 20px solid black;
+    border-top: 20px solid #333333;
+    border-right: 20px solid #333333;
+  }
+
+  .col2Box h3 {
+    color: #000;
+    text-align: center;
+    margin: 68px 10px 0 0;
+    padding: 20px 20px 0 30px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .col2Box h2 {
+    color: #000;
+    text-align: center;
+    margin: 0 10px 0 0;
+    padding: 3px 20px 20px 20px;
+    font-weight: 200;
+    font-size: 25px;
   }
 
   .col3Box {
+    background-color: #44d6ff;
     margin: 0;
-    width: 49%;
+    padding: 0 8px 0 8px;
+    width: 48.5%;
     height: 42vh;
     float: right;
-    border-top: 20px solid black;
+    border-top: 20px solid #333333;
+  }
+
+  img.logo {
+    display: block;
+    width: 75px;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .col3Box p {
+    color: #000;
+    margin: 0;
+    padding: 20px 20px 0 30px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
   }
 }
