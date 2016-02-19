@@ -25,7 +25,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   color: #fff;
-  background-color: #292929;
+  background-color: #3d3d3d;
 }
 
 p {
@@ -50,11 +50,12 @@ p {
   margin: 0;
   padding: 15px 5px 10px 15px;
   background-color: #fff;
-  color: #292929;
+  color: #3d3d3d;
+  letter-spacing: 5px;
 }
 
 .nav h3 a:link, .nav h3 a:visited, .nav h3 a:active {
-  color: #292929;
+  color: #3d3d3d;
   text-decoration: none;
 }
 
@@ -71,11 +72,11 @@ p {
   padding: 0 15px 0 15px;
   font-weight: 200;
   font-size: 15px;
-  color: #292929;
+  color: #3d3d3d;
 }
 
 .nav span a:link, .nav span a:visited, .nav span a:active {
-  color: #292929;
+  color: #3d3d3d;
   text-decoration: none;
 }
 
@@ -116,7 +117,7 @@ p {
 }
 
 .primaryCaption h5 {
-  color: #292929;
+  color: #3d3d3d;
   margin: 0;
   padding: 20px;
   font-weight: 200;
@@ -132,7 +133,7 @@ p {
 
 
 .col2Box h3 {
-  color: #292929;
+  color: #3d3d3d;
   margin: 0;
   padding: 20px 20px 1px 20px;
   font-weight: 200;
@@ -140,7 +141,7 @@ p {
 }
 
 .col2Box h2 {
-  color: #292929;
+  color: #3d3d3d;
   margin: 0;
   padding: 3px 20px 20px 20px;
   font-weight: 200;
@@ -159,7 +160,7 @@ img.logo {
 }
 
 .col3Box p {
-  color: #292929;
+  color: #3d3d3d;
   margin: 0;
   padding: 20px;
   font-weight: 200;
@@ -178,8 +179,8 @@ img.logo {
   .nav {
     position: absolute;
     top: 0;
-    left: 25px;
-    width: 155px;
+    left: 30px;
+    width: 300px;
     background: none;
   }
 
@@ -187,6 +188,7 @@ img.logo {
     background: none;
     color: #fff;
     padding: 15px 5px 0px 15px;
+    font-size: 30px;
   }
 
   .nav h3 a:link, .nav h3 a:visited, .nav h3 a:active {
@@ -201,6 +203,7 @@ img.logo {
 
   .nav span {
     display: block;
+    font-size: 18px;
     padding-bottom: 2.5px;
     padding-top: 2.5px;
     color: #fff;
@@ -230,12 +233,12 @@ img.logo {
     width: 51.5%;
     height: 42vh;
     float: left;
-    border-top: 20px solid #292929;
-    border-right: 20px solid #292929;
+    border-top: 20px solid #3d3d3d;
+    border-right: 20px solid #3d3d3d;
   }
 
   .col2Box h3 {
-    color: #292929;
+    color: #3d3d3d;
     text-align: center;
     margin: 68px 10px 0 0;
     padding: 20px 20px 0 30px;
@@ -245,7 +248,7 @@ img.logo {
   }
 
   .col2Box h2 {
-    color: #292929;
+    color: #3d3d3d;
     text-align: center;
     margin: 0 10px 0 0;
     padding: 3px 20px 20px 20px;
@@ -260,7 +263,7 @@ img.logo {
     width: 48.5%;
     height: 42vh;
     float: right;
-    border-top: 20px solid #292929;
+    border-top: 20px solid #3d3d3d;
   }
 
   img.logo {
@@ -272,7 +275,7 @@ img.logo {
   }
 
   .col3Box p {
-    color: #292929;
+    color: #3d3d3d;
     margin: 0;
     padding: 20px 20px 0 30px;
     font-weight: normal;
@@ -303,8 +306,8 @@ img.logo {
     float: right;
     border-right: none;
     border-top: none;
-    border-bottom: 20px solid #292929;
-    border-left: 20px solid #292929;
+    border-bottom: 20px solid #3d3d3d;
+    border-left: 20px solid #3d3d3d;
   }
 
   .col2Box h3 {
@@ -323,7 +326,7 @@ img.logo {
     height: 51.5vh;
     float: right;
     border-top: none;
-    border-left: 20px solid #292929;
+    border-left: 20px solid #3d3d3d;
   }
 
   img.logo {
@@ -342,7 +345,7 @@ img.logo {
   }*/
 
   .col3Box p {
-    color: #292929;
+    color: #3d3d3d;
     margin: 0;
     padding: 30px 25px 0 45px;
     text-align: left;
