@@ -45,7 +45,7 @@ p {
   background-color: #f3f3f3;
 }
 
-.nav h3 {
+.nav h3.textLogo {
   font-weight: 400;
   margin: 0;
   padding: 15px 5px 10px 15px;
@@ -54,12 +54,12 @@ p {
   letter-spacing: 5px;
 }
 
-.nav h3 a:link, .nav h3 a:visited, .nav h3 a:active {
+.nav h3.textLogo a:link, .nav h3.textLogo a:visited, .nav h3.textLogo a:active {
   color: #3d3d3d;
   text-decoration: none;
 }
 
-.nav h3 a:hover {
+.nav h3.textLogo a:hover {
   color: #77e1ff;
   text-decoration: none;
 }
@@ -82,6 +82,10 @@ p {
 
 .nav span a:hover {
   color: #fc9999;
+}
+
+.mediumLargeVP {
+  display: none;
 }
 
 .imgCaption {
@@ -184,19 +188,19 @@ img.logo {
     background: none;
   }
 
-  .nav h3 {
+  .nav h3.textLogo {
     background: none;
     color: #fff;
     padding: 15px 5px 0px 15px;
     font-size: 30px;
   }
 
-  .nav h3 a:link, .nav h3 a:visited, .nav h3 a:active {
+  .nav h3.textLogo a:link, .nav h3.textLogo a:visited, .nav h3.textLogo a:active {
     color: #fff;
     text-decoration: none;
   }
 
-  .nav h3 a:hover {
+  .nav h3.textLogo a:hover {
     color: #77e1ff;
     text-decoration: none;
   }
@@ -218,16 +222,45 @@ img.logo {
     color: #fc9999;
   }
 
-  .primaryCaption {
-    display: none;
-  }
-
   .col1 img {
     object-fit: cover;
     height: 60vh;
   }
 
+  .imgCaption {
+    display: none;
+  }
+
+  /*h3.mediumLargeVP {
+    display: block;
+    position: relative;
+    color: white;
+    padding: 10px 0 0 10px;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0;
+  }
+
+  h5.mediumLargeVP {
+    display: block;
+    position: relative;
+    color: white;
+    padding: 10px 0 10px 10px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 5px;
+  }*/
+
+  .primaryCaption {
+    display: none;
+  }
+
+  h3.smallVP, h5.smallVP {
+    display: none;
+  }
+
   .col2Box {
+    position: relative;
     background-color: #fc9999;
     margin: 0;
     width: 51.5%;
@@ -302,28 +335,30 @@ img.logo {
 
   .col2Box {
     width: 30%;
-    height: 48.5vh;
+    height: 50vh;
     float: right;
     border-right: none;
     border-top: none;
     border-bottom: 20px solid #3d3d3d;
     border-left: 20px solid #3d3d3d;
+    overflow: hidden;
+    text-overflow: clip;
   }
 
   .col2Box h3 {
-    margin: 85px 10px 0 0;
   }
 
   .col2Box h2 {
-    padding: 10px 20px 20px 20px;
+    /*padding: 10px 20px 20px 20px;*/
     font-weight: 200;
     font-size: 30px;
+    top: 50%;
   }
 
   .col3Box {
     padding: 0 8px 0 8px;
     width: 30%;
-    height: 51.5vh;
+    height: 50vh;
     float: right;
     border-top: none;
     border-left: 20px solid #3d3d3d;
